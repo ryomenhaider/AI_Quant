@@ -26,7 +26,7 @@ RULES:
 class LLMService:
     def __init__(self):
         self.base_url = "https://openrouter.ai/api/v1/chat/completions"
-        self.model = "meta-llama/llama-3-8b-chat"
+        self.model = "google/gemma-2-9b-it"
         self.system_prompt = SYSTEM_PROMPT
 
     async def chat(self, message: str) -> Any:
